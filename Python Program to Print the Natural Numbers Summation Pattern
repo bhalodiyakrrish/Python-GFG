@@ -1,0 +1,13 @@
+def printnaturnal(num):
+    for i in range(1,num+1):
+        sum = 0
+        for j in range(1,i+1):
+            sum += j
+            if j == i:
+                print(j,"=",sum)
+            else:
+                print(j,end="+")
+        print()
+    
+num = int(input())
+printnaturnal(num)
